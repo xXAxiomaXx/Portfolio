@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background: rgb(0,59,93);
+    background: linear-gradient(180deg, rgba(0,59,93,1) 0%, rgba(0,29,46,1) 35%, rgba(0,0,0,1) 100%);
+    
+}
+
+body *{
+    font-family: "Inter", sans-serif;
+    line-height: 160%;
+}
+
+header{
+    margin-top: 32px;
+    height: calc(120p + 32px);
+}
+
+header img {
+    width: 100%;
+    border-radius: 50%;
+
+}
+header h2{
+    color: white;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    transition: transform .3s;
+    
+}
+
+header p{
+    color: white;
+    letter-spacing: 1px;
+    transition: transform .3s;
+}
+
+header div{
+    width: 120px;
+    margin: auto;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(1,124,162,1) 50%, rgba(0,0,0,1) 100%);
+    border-radius: 50%;
+    display: flex;
+    padding: 4px;
+    transition: transform .3s;
+
+}
+
+header div:hover{
+    transform: scale(1.1);
+}
+
+main{
+    max-width: 580px;
+    width: 90%;
+    margin: 32px auto;
+    display: grid;
+    gap: 24px;
+
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.games-list img {
+    border-radius: 8px;
+    width: 90px;
+}
+
+.ability-list img {
+    width: 70px;
+}
+
+section{
+    color: white;
+    background: rgb(0,37,48);
+    background: linear-gradient(90deg, rgba(0,37,48,1) 0%, rgba(0,86,113,1) 35%, rgba(1,124,162,1) 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+
+}
+
+section div{
+    background-color: #232226;
+    padding: 32px;
+    padding-top: 24p;
+    border-radius: 8px;
+}
+
+section h2{
+    line-height: 160%;
+    letter-spacing: -0.47px;
+}
+
+section ul{
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    transition: transform 0.7s;
+}
+
+section ul li:hover{
+    transform: scale(1.5);
+}
+
+
+
+p{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transition:all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+}
+
