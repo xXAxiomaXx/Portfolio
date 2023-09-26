@@ -253,6 +253,9 @@ span {
 
 .projects {
   background: var(--second-bg-color);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .projects h2 {
@@ -265,6 +268,7 @@ span {
   align-items: center;
   gap: 2.5rem;
   padding-top: 5rem;
+  margin-bottom: 10rem;
 }
 
 .projects-container .projects-box {
@@ -331,6 +335,10 @@ span {
 .projects-layer a i {
   font-size: 2rem;
   color: var(--second-bg-color);
+}
+
+.projects .btn{
+  font-size: 2rem;
 }
 
 .footer {
