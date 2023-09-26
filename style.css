@@ -222,7 +222,7 @@ span {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: .3rem;
+  gap: 2rem;
 }
 
 .skills-container .skills-box {
