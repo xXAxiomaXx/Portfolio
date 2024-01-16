@@ -63,14 +63,14 @@ function Main() {
             <a
               href="https://www.linkedin.com/in/emouradev"
               target="_blank"
-              className="text-blue-500 inline-flex justify-center items-center bg-transparent text-5xl sm:my-2 sm:mr-1 hover:scale-125 transition ease-in-out duration-300"
+              className="text-blue-500 inline-flex justify-center items-center bg-transparent text-5xl sm:my-2 sm:mr-3 hover:scale-125 transition ease-in-out duration-300"
             >
               <i className="bx bxl-linkedin-square"></i>
             </a>
             <a
               href="https://github.com/xXAxiomaXx"
               target="_blank"
-              className="text-blue-500  inline-flex justify-center items-center bg-transparent text-5xl sm:my-2 sm:mr-1 hover:scale-125 transition ease-in-out duration-300 "
+              className="text-blue-500  inline-flex justify-center items-center bg-transparent text-5xl sm:my-2 sm:mr-3 hover:scale-125 transition ease-in-out duration-300 "
             >
               <i className="bx bxl-github"></i>
             </a>
@@ -78,7 +78,7 @@ function Main() {
           <a
             href="https://files.fm/f/xf876rz87m"
             target="_blank"
-            className="inline-block  self-center sm:self-start bg-gradient-to-r text-center w-6/12 from-blue-500 to-purple-600 text-white hover:scale-110 transition ease-in-out duration-300 py-1 px-4 rounded-full justify-self-center"
+            className="inline-block  self-center sm:self-start bg-gradient-to-r text-center w-6/12 md:w-4/12 from-blue-500 to-purple-600 text-white hover:scale-110 transition ease-in-out duration-300 py-1 px-4 rounded-full justify-self-center"
           >
             Download CV
           </a>
