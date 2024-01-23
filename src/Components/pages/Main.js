@@ -153,10 +153,10 @@ function Main() {
             <i className="bx bxl-bootstrap "></i>
           </a>
           <a className="text-4xl sm:text-5xl xl:text-8xl p-3 opacity-50 hover:opacity-100 hover:scale-125 transition ease-in-out duration-500">
-            <i classname='bx bxl-sass'></i>
+            <i classname="bx bxl-sass"></i>
           </a>
           <a className="text-4xl sm:text-5xl xl:text-8xl p-3 opacity-50 hover:opacity-100 hover:scale-125 transition ease-in-out duration-500">
-            <i classname='bx bxl-typescript'></i>
+            <i classname="bx bxl-typescript"></i>
           </a>
           <a className="text-4xl sm:text-5xl xl:text-8xl p-3 opacity-50 hover:opacity-100 hover:scale-125 transition ease-in-out duration-500">
             <i className="bx bxl-git "></i>
