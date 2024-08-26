@@ -12,11 +12,15 @@ Este projeto é um aprimoramento do meu antigo portfólio com design mais bonito
 
 ## 📷 Screenshots:
 
-![](./Images/Screenshots/Captura de Tela (81).png)
-![](./Images/Screenshots/Captura de Tela (82).png)
-![](./Images/Screenshots/Captura de Tela (83).png)
-![](./Images/Screenshots/Captura de Tela (84).png)
-![](./Images/Screenshots/Captura de Tela (85).png)
+![](./Images/Screenshots/Captura de Tela 1.png)
+
+![](./Images/Screenshots/Captura de Tela 2.png)
+
+![](./Images/Screenshots/Captura de Tela 3.png)
+
+![](./Images/Screenshots/Captura de Tela 4.png)
+
+![](./Images/Screenshots/Captura de Tela 5.png)
 
 ## Funcionalidades Adicionais:
 
