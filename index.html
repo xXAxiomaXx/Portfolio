@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="shortcut icon" type="imagex/png" href="./images/_EM_-removebg-preview.ico">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -23,13 +24,19 @@
       crossorigin="anonymous"
     ></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <title>Portfolio Web Developer</title>
   </head>
   <body class="bg-black overflow-x-hidden cursor-default scroll-smooth select-none" >
+
+    <div id="loading-screen">
+      <div id="loading-percentage">0%</div>
+  </div>
+
+  <div class="loader"></div>
     <button id="up" class="fixed right-4 bottom-2 bg-slate-300 text-sm hidden rounded-full px-3 py-2 z-50"><i class="fa-solid fa-arrow-up text-black w-full h-full rounded-full"></i></button>
-    <div id="home">
+    <div id="home" class="bg-transparent w-screen">
       <nav class="flex items-center justify-center w-full z-50">
         <div
           class="flex flex-col md:flex-row text-white w-11/12 rounded-xl justify-between items-center px-5 py-2 mt-1"
@@ -56,15 +63,15 @@
           >
             Hello World, I'm Eric Moura
           </h1>
-          <h2 class="text-white text-3xl md:text-4xl mb-5 z-50">
-            I'm a <span id="typed" class="font-bold"></span>
+          <h2 class="text-white text-3xl md:text-4xl mb-10 z-50">
+           I'm a <span id="typed" class="font-bold"></span>
           </h2>
-          <h3 class="text-white px-3 md:px-0 text-2xl md:text-3xl font-bold mb-10 z-50">
+          <!-- <h3 class="text-white px-3 md:px-0 text-2xl md:text-3xl font-bold mb-10 z-50">
             I design and build clean websites
-          </h3>
+          </h3> -->
           <a
             id="bt"
-            class="text-white px-7 py-2 font-black rounded-full text-xl tracking-wider w-fit z-50 ease-in-out duration-200 hover:scale-110 active:scale-90"
+            class=" text-white px-7 py-2 font-black rounded-full text-xl tracking-wider w-fit z-50 ease-in-out duration-200 hover:scale-110 active:scale-90"
             href="#contact"
           >
             Hire Me
@@ -77,16 +84,17 @@
         class="text-white w-11/12 h-fit flex flex-col bg-zinc-950 rounded-lg border-2 border-zinc-900 px-5 py-5 md:py-16 shadow-sm shadow-zinc-950"
       >
         <div class="w-full flex flex-col items-center scroll-smooth" id="about">
-          <h1 class="text-5xl font-black tracking-wider mb-12">About Me</h1>
+          <h1 class="text-5xl font-black tracking-wider mb-12" data-aos="fade-down" data-aos-easing="ease-in-out">About Me</h1>
           <div class="flex flex-col md:flex-row justify-center items-center mb-16">
             <div class="w-full mb-5 md:mb-0 md:w-96 mx-10">
             <img
               src="./Images/WhatsApp Image 2023-12-13 at 17.18.31.jpeg"
               class="w-full rounded-lg mr-10 mb-3"
               alt=""
+              data-aos="fade-right"
             />
           </div>
-            <p class="text-lg text-center md:text-left md:w-4/12 font-semibold text-gray-400 mb-4 tracking-wide leading-relaxed">
+            <p data-aos="fade-left" class="text-lg text-center md:text-left md:w-4/12 font-semibold text-gray-400 mb-4 tracking-wide leading-relaxed">
               Life was a dead-end labyrinth, an indecipherable enigma, until
               programming crossed my path. Like a ray of sunshine on a cloudy
               day, it illuminated my world and gave me a new purpose. For the
@@ -104,10 +112,13 @@
             </p>
           </div>
           <div class="mb-16 md:gap-x-16 w-full flex items-center shrink-0 grow-0 justify-center">
-            <a href="https://files.fm/f/728nh2rtvd" target="_blank" class="text-black bg-slate-400 hover:bg-slate-300 px-7 py-2 font-black rounded w-full md:w-auto md:text-lg tracking-wider w-fit z-50 ease-in-out duration-200 hover:scale-110 active:scale-90">Download CV - EN</a>
-            <a href="https://files.fm/f/2n7ue2x8bj" target="_blank" class="text-black bg-slate-400 hover:bg-slate-300 px-7 py-2 font-black rounded w-full md:w-auto md:text-lg tracking-wider w-fit z-50 ease-in-out duration-200 hover:scale-110 active:scale-90">Download CV - PT-BR</a>
+            <button data-aos="zoom-in" class="text-black bg-slate-400 hover:bg-slate-300 px-3 md:px-7 py-1 md:py-2 font-black rounded w-full md:w-auto md:text-lg tracking-wider w-fit z-50 ease-in-out duration-200 hover:scale-110 active:scale-90">Download CV - PT-BR</button>
+            <button data-aos="zoom-in" class="text-black bg-slate-400 hover:bg-slate-300 px-3 md:px-7 py-1 md:py-2 font-black rounded w-full md:w-auto md:text-lg tracking-wider w-fit z-50 ease-in-out duration-200 hover:scale-110 active:scale-90">Download CV - EN</button>
           </div>
-          <div class="w-10/12 mb-24 h-fit text-gray-500 self-center inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+          <h1 data-aos="zoom-in" class="text-5xl font-black tracking-wider mb-12">Skills</h1>
+          <div data-aos="fade-up" class="w-10/12 mb-24 h-fit text-gray-500 self-center inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+
+              
             <ul
               class="flex items-center justify-center md:justify-start [&_li]:mx-8 animate-infinite-scroll"
             >
@@ -147,12 +158,12 @@
           </div>
         </div>
         <div class="w-full flex flex-col mb-36" id="projects">
-          <h1 class="text-5xl font-black tracking-wider mb-12 self-center">My Projects</h1>
+          <h1 class="text-5xl font-black tracking-wider mb-12 self-center" data-aos="fade-up">Projects</h1>
           <div class="flex flex-col md:flex-row gap-10 w-full md:px-5 items-center justify-center">
-            <a href="https://animedb-xxaxiomaxxs-projects.vercel.app/" target="_blank" class="hover:scale-105 ease-in-out duration-200">
-            <div class="max-w-sm rounded-lg flex flex-col items-center overflow-hidden shadow-lg shadow-black bg-black border-2 border-t-0 border-zinc-900">
-              <img class="w-full" src="/Images/Captura de Tela (80).png" alt="Sunset in the mountains">
-              <div class="px-6 py-4 flex flex-col items-center">
+            <a data-aos="fade-right" data-aos-delay="400" href="https://animedb-xxaxiomaxxs-projects.vercel.app/" target="_blank" class="hover:scale-105 ease-in-out duration-200">
+            <div  class="max-w-sm rounded-lg flex flex-col items-center overflow-hidden shadow-lg shadow-black bg-black border-2 border-t-0 border-zinc-900">
+              <img class="w-full bg-white" src="/Images/Group 2 (1).png" alt="Sunset in the mountains">
+              <div class="px-6 py-4 flex flex-col items-center" >
                 <h1 class="font-bold text-center text-xl mb-3 tracking-wider">Anime DB</h1>
                 <p class="text-gray-700 text-base text-center border-t border-white/50 pt-3">
                   Anime database built with React and Jikan API. Dive into the world of anime with this intuitive app. Search, explore, and discover your favorite anime quickly and easily.
@@ -161,31 +172,32 @@
               <div class="px-6 pt-4 pb-2">
                 <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">ReactJs</span>
                 <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">RestApi</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">reac-router-dom</span>
               </div>
             </div>
           </a>
-          <a href="https://kainktattoo.vercel.app/" target="_blank" class="hover:scale-105 ease-in-out duration-200">
+          <a data-aos="fade-right" data-aos-delay="200" href="https://home-budget-dun.vercel.app/" target="_blank" class="hover:scale-105 ease-in-out duration-200">
             <div class="max-w-sm rounded-lg flex flex-col items-center overflow-hidden shadow-lg shadow-black bg-black border-2 border-t-0 border-zinc-900">
-              <img class="w-full" src="/Images/Captura de Tela (45).png" alt="Sunset in the mountains">
+              <img class="w-full bg-white" src="/Images/Group 2.png" alt="Sunset in the mountains">
               <div class="px-6 py-4 flex flex-col items-center">
-                <h1 class="font-bold text-xl mb-3 tracking-wider">Kaink Tattoo</h1>
+                <h1 class="font-bold text-xl mb-3 tracking-wider" >Home Budget</h1>
                 <p class="text-gray-700 text-base text-center border-t border-white/50 pt-3">
-                  I created a user-friendly, visually appealing React landing page for a tattoo artist. The focus was on smooth navigation and a modern design to attract new clients and showcase their work.
+                  I created a user-friendly, visually appealing React Budget control app, making it easy for users to manage their finances.
                 </p>
               </div>
               <div class="px-6 pt-4 pb-2">
                 <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">ReactJs</span>
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">SEO</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">react-router-dom</span>
               </div>
             </div>
           </a>
-          <a href="https://payment-app-liart.vercel.app/" target="_blank" class="hover:scale-105 ease-in-out duration-200">
+          <a data-aos="fade-right" href="https://payment-app-liart.vercel.app/" target="_blank" class="hover:scale-105 ease-in-out duration-200">
             <div class="max-w-sm rounded-lg flex flex-col items-center overflow-hidden shadow-lg shadow-black bg-black border-2 border-t-0 border-zinc-900">
-              <img class="w-full" src="/Images/Captura de Tela (61).png" alt="Sunset in the mountains">
+              <img class="w-full bg-white" src="/Images/Group 2 (2).png" alt="Sunset in the mountains">
               <div class="px-6 py-4 flex flex-col items-center">
-                <h1 class="font-bold text-xl mb-3 tracking-wider">Ukalaa</h1>
+                <h1 class="font-bold text-xl mb-3 tracking-wider" >Ukalaa</h1>
                 <p class="text-gray-700 text-base text-center border-t border-white/50 pt-3">
-                  I've built a user-friendly landing page for an online payment platform using React and Tailwind CSS. The design is responsive and visually appealing, focused on driving conversions.
+                  I've built a user-friendly landing page for an online payment platform using React and Tailwind CSS. The design is responsive and visually appealing, focused on SEO.
                 </p>
               </div>
               <div class="px-6 pt-4 pb-2">
@@ -198,30 +210,30 @@
           </div>
         </div>
         <div class="w-full flex flex-col items-center" id="contact">
-          <h1 class="text-5xl font-black tracking-wider mb-12 self-center">Contact</h1>
+          <h1 class="text-5xl font-black tracking-wider mb-12 self-center" data-aos="fade-up">Contact</h1>
           <form action="https://api.web3forms.com/submit" method="POST" class="space-y-8 w-full md:w-8/12 mb-24 flex flex-col">
             <input type="hidden" name="access_key" value="34acbd53-8a51-429b-8693-81fbde440c1e">
-            <div>
+            <div data-aos="fade-right">
                 <label for="email" class="block mb-2 font-medium text-gray-300">Your email</label>
                 <input type="email" name="email" id="email" class="shadow-sm w-full bg-gray-50 border border-gray-300 text-gray-200 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@example.com" required>
             </div>
-            <div>
+            <div data-aos="fade-right" data-aos-delay="300">
                 <label for="name" class="block mb-2 font-medium text-gray-300">Your name</label>
                 <input type="text" name="name" id="name" class="block p-3 w-full text-sm text-gray-200 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Your name here..." required>
             </div>
-            <div>
+            <div data-aos="fade-right" data-aos-delay="500">
                 <label for="subject" class="block mb-2 font-medium text-gray-300">Your subject</label>
                 <input type="text" name="subject" id="subject" class="block p-3 w-full text-sm text-gray-200 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Your subject here..." required>
             </div>
-            <div class="sm:col-span-2">
+            <div class="sm:col-span-2" data-aos="fade-right" data-aos-delay="700">
                 <label for="message" class="block mb-2 font-medium text-gray-300">Your message</label>
                 <textarea id="message" name="message" rows="6" class="block p-2.5 w-full text-sm text-gray-200 bg-gray-700 border-0 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500" placeholder="Leave a message..." required></textarea>
             </div>
             <input type="hidden" name="redirect" value="https://emouradev.vercel.app/thanks.html">
             <!-- <div class="g-recaptcha self-center" data-sitekey="6LcDnh8qAAAAAE7wsQ8lcwI1ek86mIG4nsNJIyj0"></div> -->
-            <button type="submit" class="py-3 px-5 self-center bg-zinc-900 font-bold text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300">Send Message</button>
+            <button type="submit" class="py-3 px-5 self-center bg-zinc-900 font-bold text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300" data-aos="fade-right" data-aos-delay="700">Send Message</button>
         </form>
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center" data-aos="fade-up">
           <h3 class="text-2xl font-bold tracking-wider mb-8 self-center">Contact Info</h3>
           <p class="self-center font-semibold text-lg cursor-default">E-mail: <span class="select-text cursor-text">ericmsm.dev@gmail.com</span></p>
           <p class="self-center mb-3 font-semibold text-lg cursor-default">Phone: <span class="select-text cursor-text">+55 (22) 99750-9112</span></p>
@@ -307,7 +319,6 @@
       });
       
     </script>
-    <script src="index.js"></script>
     <script>
       tailwind.config = {
         theme: {
@@ -325,11 +336,12 @@
         },
       };
     </script>
+    <script src="./Scripts/loadingScreen.js"></script>
+    <script src="./Scripts/mobileMenu.js"></script>
+    <script src="./Scripts/upButton.js"></script>
     <script>
-  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-</script>
-<script defer src="/_vercel/insights/script.js"></script>
-    
+      AOS.init();
+    </script>
   </body>
 
   <style>
@@ -342,6 +354,46 @@
       font-family: "Lato", sans-serif;
       scroll-behavior: smooth;
     }
+
+    .loader{
+      position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: linear-gradient(
+        to right,
+        #7a87fb,
+        #e281d8,
+        #ff8faf,
+        #ffb096,
+        #ffd49c
+      ); */
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
+    z-index: 999999;
+    }
+
+    #loading-screen{
+      position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: transform 0.2s ease-in;
+    }
+
+    #loading-percentage {
+    font-size: 4rem;
+    color: white;
+    font-weight: bold;
+}
+
     .title {
       -webkit-text-fill-color: transparent;
       background-size: 100%;
