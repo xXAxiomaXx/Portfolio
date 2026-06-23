@@ -7,7 +7,7 @@ import { Analytics } from '@vercel/analytics/next';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center w-full">
+    <main className="flex min-h-screen flex-col items-center w-full w-max-screen">
       <Hero />
       <About />
       <Projects />
