@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex flex-col justify-center items-center w-full max-w-screen min-h-screen px-4 pt-16 select-none bg-black"
+      className="relative flex flex-col justify-center items-center w-full max-w-screen overflow-hidden min-h-screen px-4 pt-16 select-none bg-black"
     >
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-[#7a87fb] rounded-full mix-blend-screen filter blur-[100px] opacity-30 animate-blob"></div>
